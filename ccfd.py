@@ -5,8 +5,8 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # load data
-location = r"C:\Users\Dell\Downloads\archive (1)\creditcard.csv"
-column_names = ['V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,V17,V18,V19,V20,V21,V22,V23,V24,V25,V26,V27,V28,amount,class']  # Set your column names if the file doesn't have a header
+location = r"your file path here"
+column_names = ['']  # Set your column names if the file doesn't have a header
 data = pd.read_csv(location, header=None, names=column_names)
 # divide data into features and target
 X = data.iloc[:, :-1]
